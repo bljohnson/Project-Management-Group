@@ -1,9 +1,9 @@
 var express = require ("express");
 var app = express();
 var generateE = require("./modules/generateEmployee");
-// var generateName = require("./modules/generateName");
 var path = require("path");
 
+app.use(express.static('public')); // allow use of public files
 
 var server = app.listen(process.env.PORT || 3000, function () {
   console.log("listening on port 3000");
@@ -16,9 +16,11 @@ app.get('/', function (req, res) {
   res.end();
 });//end of base app.get
 
-// app.get('/index', function (req, res) {
-//   res.sendFile ( path.resolve("view/index.html"));
-// });
+app.get('/index', function (req, res) {
+  //console.log(path.resolve("view/index.html"));
+  res.sendFile (path.resolve("public/view/index.html")); // added public/ in front of view - YAYYYYYYYY
+
+});
 
 app.get('/pathGet', function (req, res) {
 

@@ -1,16 +1,15 @@
-var names = ["Beyonce", "LLCoolJ", "McBirdyPants", "Chancey", "LLBlueJay","Schmidt", "Angus", "Snoopy", "Captain FeatherBottom", "Princess CooCoo Poof"];
-var studentName;
+var employeeData;
 
 $(document).ready(function() {
   $('#ajaxGenName' ).click( function(){
     console.log( 'button clicked' );
      $.ajax({
-       url: 'https://raw.githubusercontent.com/devjanaprime/2.4-jQueryAjaxJSON/master/students.json',
-       dataType: 'json',
+       url: 'http://localhost:3000/pathGet',
+       dataType: 'text',
        success: function( data ){
           console.log( 'in ajax success' );
           console.log( data );
-          studentName = data;
+          employeeData = data;
          }, // end success
        statusCode: {
           404: function(){
