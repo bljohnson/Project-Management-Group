@@ -1,7 +1,7 @@
 var express = require ("express");
 var app = express();
 var generateE = require("./modules/generateEmployee");
-var generateName = require("./modules/generateName");
+// var generateName = require("./modules/generateName");
 var path = require("path");
 
 
@@ -22,12 +22,12 @@ app.get('/', function (req, res) {
 
 app.get('/pathGet', function (req, res) {
 
-  res.write( outputText );
+  res.write( generateE() );
   res.end();
   });//end of app.get / pathGet
 
-app.get('/pathName', function (req, res) {
-
-  res.write(generateName());
-  res.end();
-  });//end of app.get / pathName
+// app.get('/pathName', function (req, res) {
+//
+//   res.write(generateName());
+//   res.end();
+//   });//end of app.get / pathName

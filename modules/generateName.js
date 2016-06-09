@@ -1,11 +1,12 @@
 var names = ["Beyonce", "LLCoolJ", "McBirdyPants", "Chancey", "LLBlueJay","Schmidt", "Angus", "Snoopy", "Captain FeatherBottom", "Princess CooCoo Poof"];
 
-var randomizer = names[Math.floor(Math.random()*names.length)];
+var randomizerNames = names[Math.floor(Math.random()*names.length)]; // generates random index number
 
 
 var generateName = function(){
-  console.log(randomizer);
-
+  return (randomizerNames);
 };//end generateName function
+
+generateName();
 
 module.exports=generateName;
