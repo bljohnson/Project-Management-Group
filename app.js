@@ -1,6 +1,7 @@
 var express = require ("express");
 var app = express();
 var generateE = require("./modules/generateEmployee");
+var generateName = require("./modules/generateName");
 var path = require("path");
 
 
@@ -27,6 +28,6 @@ app.get('/pathGet', function (req, res) {
 
 app.get('/pathName', function (req, res) {
 
-  res.write('received from generateName');
+  res.write(generateName());
   res.end();
   });//end of app.get / pathName
