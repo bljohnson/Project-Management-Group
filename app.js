@@ -15,13 +15,13 @@ app.get('/', function (req, res) {
   res.end();
 });//end of base app.get
 
-app.get('/index', function (req, res) {
-  res.sendFile ( path.resolve("view/index.html"));
-});
+// app.get('/index', function (req, res) {
+//   res.sendFile ( path.resolve("view/index.html"));
+// });
 
 app.get('/pathGet', function (req, res) {
 
-  res.write('received from generateEmployee');
+  res.write( outputText );
   res.end();
   });//end of app.get / pathGet
 
