@@ -1,12 +1,20 @@
 var express = require ("express");
 var app = express();
+<<<<<<< HEAD
 var generateE = require("./modules/generateEmployee.js");
+=======
+var generateE = require("./modules/generateEmployee");
+>>>>>>> a06c29a2142f7164fddcd7c56e934873ee1a36fa
 var path = require("path");
 
 app.use(express.static('public')); // allow use of public files
 
 var server = app.listen(process.env.PORT || 3000, function () {
+<<<<<<< HEAD
   console.log("listening on port");
+=======
+  console.log("listening on port 3000");
+>>>>>>> a06c29a2142f7164fddcd7c56e934873ee1a36fa
 } );//end of app.listen
 
 app.get('/', function (req, res) {
