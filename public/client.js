@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // var employeeData;
 
 $(document).ready(function() {
@@ -17,30 +16,10 @@ $(document).ready(function() {
           // employeeData = data;
         }); // end click function
         }, // end success function
-=======
-var employeeData;
-
-$(document).ready(function() {
-  $('#ajaxGenName' ).click( function(){
-    console.log( 'button clicked' );
-     $.ajax({
-       url: 'http://localhost:3000/pathGet',
-       dataType: 'text',
-       success: function( data ){
-          console.log( 'in ajax success' );
-          console.log( data );
-          employeeData = data;
-         }, // end success
->>>>>>> a06c29a2142f7164fddcd7c56e934873ee1a36fa
        statusCode: {
           404: function(){
              alert( 'error connecting to server' );
           } // end 404
          } // end statusCode
-<<<<<<< HEAD
        }); // end ajax request
-=======
-       }); // end ajax  object
-  }); // end click getJSONAjax button
->>>>>>> a06c29a2142f7164fddcd7c56e934873ee1a36fa
 });//end document ready
