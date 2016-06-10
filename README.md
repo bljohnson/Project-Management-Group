@@ -21,8 +21,10 @@ This project is hard enough as it is, so there will be no 'gotchas' to this task
 
 Good Luck, Have Fun!
 
-Hard Mode
+<b>Hard Mode:</b>
+
 Look back through the Walking Skeleton build and implement a router into your serverside logic.
 
-Pro Mode
+<b>Pro Mode:</b>
+
 When generating employees, if a skill set is already filled in the team generation, let the server know this information so that it does not generate an employee of the same skill set. Note: This will require the 'POST' method and will need to be researched.
